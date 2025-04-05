@@ -1,8 +1,6 @@
-# 🖤 Crafted by RJ — Web Developer Profile
+# 🖤 Crafted by RJ
 
 Welcome to my personal developer profile. This space highlights my expertise and the kind of work I do — from building fast, responsive websites to crafting elegant design systems with **WordPress** and **Webflow**.
-
-🔗 **Live Site**: [yourbrand.github.io](https://yourbrand.github.io)
 
 ---
 
@@ -28,18 +26,16 @@ I help individuals and businesses launch beautiful, high-performing websites —
 
 ---
 
-## 🔒 Why No Portfolio?
+## 🔒 **Why No Portfolio?**
 
 Most of my work is under **NDAs** or private client contracts.  
 However, I’m happy to talk about what I’ve done — just send a message and let’s chat!
 
 ---
 
-## 📬 Contact
+## 📬 **Contact Me (or Summon Me)**
 
-Interested in working together or just want to connect?
+Ready to get started? Whether it’s a project, a question, or just to say **“Hi!”**, here’s how you can reach me:
 
-- 🌐 Site: [yourbrand.github.io](https://yourbrand.github.io)
-- 📧 Email: [youremail@domain.com](mailto:youremail@domain.com)
-- 💬 Socials: [LinkedIn, Twitter, etc. if applicable]
-
+- 🌐 **Site**: [madebyregina.github.io](https://madebyregina.github.io)  
+- 📧 **Send a Digital Owl**: [Send an email](mailto:53_rockery_wavelet@icloud.com) — I'll respond faster than an owl in a hurry! 🦉  
