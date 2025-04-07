@@ -3,121 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RJ.dev | Web Developer</title>
+  <title>Made by Regina | Web Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0d1117;
-      --text: #c9d1d9;
-      --accent: #58a6ff;
-      --font-mono: 'Fira Code', monospace;
-      --font-sans: 'Inter', sans-serif;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: var(--font-sans);
-      line-height: 1.6;
-      padding: 2rem;
-    }
-
-    h1, h2 {
-      font-family: var(--font-mono);
-      color: var(--accent);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .typing {
-      font-size: 1.8rem;
-      font-family: var(--font-mono);
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid var(--accent);
-      width: 0;
-      animation: typing 3s steps(30, end) forwards, blink .75s step-end infinite;
-      margin-bottom: 1rem;
-    }
-
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 100%; }
-    }
-
-    @keyframes blink {
-      50% { border-color: transparent; }
-    }
-
-    .section {
-      margin-top: 3rem;
-    }
-
-    .projects a {
-      display: block;
-      margin: 0.5rem 0;
-    }
-
-    ul {
-      list-style: disc;
-      padding-left: 1.2rem;
-    }
-
-    footer {
-      margin-top: 4rem;
-      font-size: 0.8rem;
-      color: #555;
-      text-align: center;
-    }
-  </style>
+    <link rel="stylesheet" type="text/css" href="assets/fullpage/fullpage.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-  <h1 class="typing">RJ.dev</h1>
-  <p>Frontend Developer | Webflow & WordPress</p>
 
-  <div class="section">
-    <h2>About</h2>
-    <p>
-      I design and develop responsive, fast, and sleek websites using Webflow and WordPress. My work focuses on clean structure, performance, and intuitive experiences — blending design and function.
-    </p>
-    <p style="margin-top: 1rem;">
-      My client projects are private, under NDA or internal-only, so you won’t find full case studies here — but feel free to reach out.
-    </p>
-  </div>
+  <div id="fullpage">
+    <div class="section active" id="section0">
+      <div class="splash">
+          <h1 class="title">madebyregina</h1>
+          <p>Web Developer | Webflow & WordPress</p>
+        </div>
+    </div>
+    <div class="section" id="section2">
+      
+        <div class="container">
+          <div class="intro">
+          <div class="intro-image">
+            <img src="assets/images/dev.png" alt="dev">
+          </div>
+          <div class="intro-text">
+            <h2>Hello, I'm Regina!👋</h2>
+            <p>I’m a <span class="highlight">Full-Stack Web Developer</span> with a passion for building fast, responsive, and scalable websites.</p>
+            <p>I specialize in <span class="highlight">WordPress</span> and <span class="highlight">Webflow</span>, crafting both beautiful <span class="highlight">front-end</span> and powerful <span class="highlight">backend CMS</span> systems.</p>
+            <p>My goal: <span class="highlight">Optimized Performance</span> + <span class="highlight">Pixel-Perfect Designs</span> = Seamless User Experience.</p>
+            <p>Proud to write <span class="highlight">clean code</span>, focus on <span class="highlight">speed optimization</span>, and make every site <span class="highlight">responsive</span>!</p>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section3">
+      <div class="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <div class="card-container">
+            <div class="card">
+              <a href="mailto:53_rockery_wavelet@icloud.com" class="contact-link">
+                <i class="fa fa-envelope"></i>
+                <h3>Give me a digital nudge</h3>
+                <p>Email me!</p>
+              </a>
+            </div>
+            
+            <div class="card">
+              <a href="https://github.com/madebyregina" class="contact-link">
+                <i class="fa fa-github"></i>
+                <h3>GitHub</h3>
+                <p>Visit my GitHub</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>Webflow & WordPress (Elementor, ACF)</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Responsive Layouts & Animations</li>
-      <li>Performance, SEO, Accessibility</li>
-      <li>Git, GitHub, Figma</li>
-    </ul>
-  </div>
 
-  <div class="section projects">
-    <h2>Sample Projects</h2>
-    <a href="#">🔗 Portfolio Concept (Webflow)</a>
-    <a href="#">🔗 Blog System (WordPress + ACF)</a>
-    <a href="#">🔗 Landing Page (Custom HTML/CSS/JS)</a>
-  </div>
 
-  <div class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:hey@rj.dev">hey@rj.dev</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-  </div>
+  <script type="text/javascript" src="assets/fullpage/fullpage.js"></script>
+  <script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+      sectionsColor: ['transparent', 'transparent', 'transparent'],
+      anchors: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'],
+      controlArrows: false,
+      navigation: true,
+      slidesNavigation: true
+    });
+  </script>
 
   <footer>© 2025 • built with &lt;/&gt; and good coffee</footer>
+
+  <script src="assets/js/script.js"></script> <!-- Link to your external JS -->
 </body>
 </html>

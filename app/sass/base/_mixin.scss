@@ -1,0 +1,13 @@
+// Reusable Mixins
+
+@mixin fadeIn($duration: 2s) {
+  animation: fadeIn $duration ease-in-out forwards;
+}
+
+@mixin typing($duration: 3s, $steps: 30) {
+  animation: typing $duration steps($steps, end) 1 forwards;
+}
+
+@mixin blinkingCursor($duration: 0.75s) {
+  animation: blinkingCursor $duration step-end infinite;
+}

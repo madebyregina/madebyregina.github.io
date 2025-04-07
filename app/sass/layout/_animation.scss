@@ -1,0 +1,23 @@
+// Splash Screen Animation
+@keyframes gradientAnimation {
+  0% { background-color: $bg-color; }
+  50% { background-color: #1f242d; }
+  100% { background-color: $bg-color; }
+}
+
+// Typing Animation
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+// Blinking Cursor Animation
+@keyframes blinkingCursor {
+  50% { border-color: transparent; }
+}
+
+// Fade-in animation
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

@@ -1,0 +1,1 @@
+$(document).ready(function(){const t=$("#enter-btn"),n=$(".splash"),o=$(".content");t.css("opacity",0),setTimeout(function(){t.css({transition:"opacity 1s ease-in-out",opacity:1})},1e3),t.on("click",function(){n.hide(),o.show().addClass("show")})});

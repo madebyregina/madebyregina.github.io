@@ -1,0 +1,29 @@
+.splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+  gap: 16px;
+}
+
+.splash{
+  h1 {
+    font-family: $font-mono;
+    color: $accent-color;
+    font-size: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid $accent-color;
+    animation: typing 3s steps(30) ease-in-out infinite, blinkCursor 0.75s step-end infinite;
+  }
+
+  .job-title{
+    color: $text-color;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    @include fadeIn(2s);
+  }
+}
