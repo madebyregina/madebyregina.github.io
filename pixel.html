@@ -2,120 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>8-Bit Web Dev</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #1b1b1b;
-      --accent: #00ff99;
-      --text-color: #ffffff;
-      --pixel-font: 'Press Start 2P', cursive;
-    }
-
-    body {
-      margin: 0;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--pixel-font);
-      text-align: center;
-    }
-
-    header {
-      padding: 40px 20px;
-      background: #000;
-      border-bottom: 4px solid var(--accent);
-    }
-
-    h1 {
-      font-size: 20px;
-      margin: 0;
-      color: var(--accent);
-    }
-
-    section {
-      padding: 60px 20px;
-      border-bottom: 4px dashed var(--accent);
-    }
-
-    .skills, .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .pixel-box {
-      background-color: #000;
-      padding: 20px;
-      border: 3px solid var(--accent);
-    }
-
-    a.pixel-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: var(--accent);
-      color: #000;
-      text-decoration: none;
-      border: 3px solid #fff;
-      box-shadow: 3px 3px 0 #fff;
-    }
-
-    a.pixel-button:hover {
-      box-shadow: none;
-      transform: translate(3px, 3px);
-    }
-
-    footer {
-      padding: 20px;
-      font-size: 10px;
-      background: #000;
-      border-top: 4px solid var(--accent);
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Made by Regina | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/fullpage/fullpage.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
-  <header>
-    <h1>🕹️ PIXEL DEV</h1>
-    <p>Hi, I'm a web developer building cool stuff with 8-bit charm!</p>
-  </header>
-
-  <section id="about">
-    <h2>🧠 ABOUT ME</h2>
-    <p>I specialize in crafting retro-inspired websites using HTML, CSS, and JavaScript.</p>
-  </section>
-
-  <section id="skills">
-    <h2>⚡ SKILLS</h2>
-    <div class="skills">
-      <div class="pixel-box">HTML</div>
-      <div class="pixel-box">CSS</div>
-      <div class="pixel-box">JavaScript</div>
-      <div class="pixel-box">React</div>
-      <div class="pixel-box">WordPress</div>
+  <div id="fullpage">
+    <div class="section active" id="section0">
+      <div class="splash">
+          <h1 class="title">madebyregina</h1>
+          <p>Web Developer | Webflow & WordPress</p>
+        </div>
     </div>
-  </section>
-
-  <section id="projects">
-    <h2>🎮 PROJECTS</h2>
-    <div class="projects">
-      <div class="pixel-box">Game Landing Page</div>
-      <div class="pixel-box">8-Bit Portfolio</div>
-      <div class="pixel-box">Retro Blog</div>
+    <div class="section" id="section2">
+      
+        <div class="container">
+          <div class="intro">
+          <div class="intro-image">
+            <div class="img" style="background-image:url('assets/images/me.png');"></div>
+          </div>
+          <div class="intro-text">
+            <h2>Hello, I'm Regina!👋</h2>
+            <p>I’m a <span class="highlight">Full-Stack Web Developer</span> with a passion for building fast, responsive, and scalable websites.</p>
+            <p>I specialize in <span class="highlight">WordPress</span> and <span class="highlight">Webflow</span>, crafting both beautiful <span class="highlight">front-end</span> and powerful <span class="highlight">backend CMS</span> systems.</p>
+            <p>My goal: <span class="highlight">Optimized Performance</span> + <span class="highlight">Pixel-Perfect Designs</span> = Seamless User Experience.</p>
+            <p>Proud to write <span class="highlight">clean code</span>, focus on <span class="highlight">speed optimization</span>, and make every site <span class="highlight">responsive</span>!</p>
+          </div>          
+        </div>
+      </div>
     </div>
-    <a href="#" class="pixel-button">See More</a>
-  </section>
+    <div class="section" id="section3">
+      <div class="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <div class="card-container">
+            <img src="assets/images/owl.gif" alt="owl">
+            <div class="card">
+              <a href="mailto:53_rockery_wavelet@icloud.com" class="contact-link">
+                <i class="fa fa-envelope"></i>
+                <h3>Give me a digital nudge</h3>
+                <p>Email me!</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 
-  <section id="contact">
-    <h2>📬 CONTACT</h2>
-    <p>Email me at <a href="mailto:pixel@dev.com">pixel@dev.com</a></p>
-  </section>
 
-  <footer>
-    <p>© 2025 PIXEL DEV. Powered by nostalgia.</p>
-  </footer>
 
+  <script type="text/javascript" src="assets/fullpage/fullpage.js"></script>
+  <script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+      sectionsColor: ['transparent', 'transparent', 'transparent'],
+      anchors: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'],
+      controlArrows: false,
+      navigation: true,
+      slidesNavigation: true
+    });
+  </script>
+
+  <footer>© 2025 • built with &lt;/&gt; and good coffee</footer>
+
+  <script src="assets/js/script.js"></script> <!-- Link to your external JS -->
 </body>
 </html>
