@@ -5,17 +5,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1000px;
   margin: auto;
-  padding: 40px;
+  padding: 0;
   gap: 40px;
-  flex-wrap: wrap;
   @include fadeIn(2s);
 
   .intro-text{
     font-size: 1.2em;
     margin: 15px 0;
-    color: #ccc;
+    color: $white;
+    width:60%;
 
     p{ 
       &::before {
@@ -23,6 +22,20 @@
         color: $highlight-color;
         font-weight: bold;
       }
+    }
+  }
+
+  .intro-image{
+    width:40%;
+
+    .img{
+      width:100%;
+      border-radius: 100%;
+      max-width:444px;
+      min-height:444px;
+      max-height:444px;
+      background-size:cover;
+      background-position:center;
     }
   }
 

@@ -17,7 +17,8 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid $accent-color;
-    animation: typing 3s steps(30) ease-in-out infinite, blinkCursor 0.75s step-end infinite;
+    animation: typing 3s steps(30, end) forwards, blinkCursor 0.75s step-end infinite;
+    max-width:360px;
   }
 
   .job-title{

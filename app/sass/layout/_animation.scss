@@ -7,14 +7,26 @@
 
 // Typing Animation
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-// Blinking Cursor Animation
-@keyframes blinkingCursor {
-  50% { border-color: transparent; }
+@keyframes blinkCursor {
+  0% {
+    border-right-color: rgba($accent-color, 0.75);
+  }
+  50% {
+    border-right-color: transparent;
+  }
+  100% {
+    border-right-color: $accent-color;
+  }
 }
+
 
 // Fade-in animation
 @keyframes fadeIn {
