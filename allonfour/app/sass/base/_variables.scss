@@ -1,0 +1,92 @@
+//Paths
+$font-path: '/fonts';
+$images-path: '../images';
+
+// Color
+$color-white:#ffffff;
+$color-black:#000000;
+$color-primary-blue: #1E70F5;
+$color-midnight: #011627;
+$color-orange:#F46916;
+$color-midnight-blue: #002261;
+$color-red:#FF0000;
+$color-mystic:#E8EDF0;
+$color-dove-gray:#6E6E6E;
+$color-border-gray:#DDDDDD;
+$color-tory-blue:#144CA5;
+$color-abbey:#54595F;
+
+//defaults
+$sans-serif: sans-serif;
+$font-dm-sans: "DM Sans", $sans-serif;
+$font-rubik: "Rubik", $sans-serif;
+$font-lato: "Lato", $sans-serif;
+$font-poppins:"Poppins", $sans-serif;
+$font-roboto: "Roboto", $sans-serif;
+
+// Font Family
+
+// Body
+$body-font-size: 16px !default;
+$body-line-height: 1.5 !default;
+$body-font-size-mobile: 16px !default;
+$body-font-family: $font-lato !default;
+$body-color:$color-black!default;
+
+// Headers
+$h1-font-size: 64px !default;
+$h2-font-size: 48px !default;
+$h3-font-size: 35px !default;
+$h4-font-size: 30px !default;
+$h5-font-size: 24px !default;
+$h6-font-size: 18px !default;
+
+$h1-font-xs: 40px !default;
+$h2-font-xs: 30px !default;
+$h3-font-xs: 25px !default;
+$h4-font-xs: 20px !default;
+$h5-font-xs: 18px !default;
+$h6-font-xs: 16px !default;
+
+
+$headings-font-family: $font-poppins !default;
+$headings-color: $color-black !default;
+
+
+$animation-speed: 0.3s;
+
+// Line Height
+$line-height-normal: normal;
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.428571429 !default; // 20/14
+
+
+// Font Style
+$uppercase: uppercase;
+
+// Font Weight
+$fw-100: 100;
+$fw-thin: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-800: 800;
+$fw-bolder: 900;
+
+// Links
+$link-color: inherit;
+
+//** Link hover color set via `darken()` function.
+$link-hover-color:$color-orange;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+/*
+* Button Variables
+*/
+
+$button-letter-spacing:0;
+$button-font-size:24px;
+$button-font-weight:$fw-regular;

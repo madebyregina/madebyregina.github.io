@@ -1,0 +1,22 @@
+
+
+.video-block{
+	.caption{
+		font-size:20px;
+		line-height:1.5;
+		color:$color-dove-gray;
+		text-align:center;
+		max-width:767px;
+		margin:20px auto;
+	}
+
+	iframe{
+		max-width:1140px;
+		width:100% !important;
+		height:600px;
+
+		@include media("<tablet"){
+			height:250px;
+		}
+	}
+}

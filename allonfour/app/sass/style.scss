@@ -1,0 +1,62 @@
+// breakpoints 
+$breakpoints: (
+	'xs-phone': 320px,
+	'phone': 480px,
+	'phone-bigger': 576px,
+	'tablet': 768px,
+	'desktop': 992px, 
+	'ipadpro': 1025px,
+	'desktop-bootstrap' : 1200px,
+	'desktop1280' : 1281px,
+	'widescreen': 1405px, 
+	'macbook-13': 1440px
+);
+
+// keywords
+$media-expressions: ( 
+	'screen': 'screen', 
+	'print': 'print',
+	'handheld': 'handheld',
+	'landscape': '(orientation: landscape)',
+	'portrait': '(orientation: portrait)',
+	'retina2x': '(-webkit-min-de vice-pixe l-ratio: 1.5), (min-resolution: 144dpi)',
+	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)' 
+);
+
+// ligatured operators ≥ ≤
+
+@import 'base/variables';
+ 
+//vendors - bases
+@import 'vendor/include-media';
+  
+//base  
+@import 'base/mixins';
+ 
+@import 'base/helpers';
+@import 'base/reset';
+@import 'base/typography'; 
+ 
+
+//layouts
+@import 'layout/header';
+@import 'layout/footer';
+
+//modules 
+@import 'layout/module/button';
+@import 'layout/module/media-text';
+@import 'layout/module/reviews';
+ 
+//section
+@import 'layout/section/hero';
+@import 'layout/section/multi-step-form';
+@import 'layout/section/video';
+@import 'layout/section/services';
+@import 'layout/section/cta';
+@import 'layout/section/surgeons';
+@import 'layout/section/testimonials';
+@import 'layout/section/locations';
+@import 'layout/section/disclaimer';
+
+//page
+@import 'layout/page/home';

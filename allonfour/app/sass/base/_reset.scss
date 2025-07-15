@@ -1,0 +1,66 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a, abbr, acronym, address, applet, b, big, blockquote, body, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, u, ul, var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    position: relative;
+}
+
+button{
+    outline:none;
+}
+
+html{
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    font-family:$body-font-family;
+    font-size:$body-font-size;
+    line-height:$body-line-height;  
+    letter-spacing: 0.4px;
+    color:$body-color;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color:$color-white;
+
+    @include media("<desktop"){
+        font-size:$body-font-size-mobile;
+    }
+}
+
+section{
+    padding-top:64px;
+    padding-bottom:64px;
+
+    &:nth-child(odd){
+        background-color:$color-mystic;
+    }
+}
+
+.w100{
+    width:100%;
+}
+
+.container{
+    max-width:1140px;
+}

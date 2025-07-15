@@ -1,0 +1,41 @@
+
+
+
+.hero-section.overlap-bottom{
+	@include media(">=desktop"){
+		padding-bottom:312px;
+	}
+}
+.video-section.after{
+	position:relative;
+
+	@include media(">=desktop"){
+		padding-top:400px;
+	}
+
+	@include media("<desktop"){
+		padding-top:0;
+	}
+
+
+
+	.multi-step-form-section{
+       	@include media(">=desktop"){
+       		z-index: 10;
+		    position: absolute;
+		    top: -250px;
+		    left: 0;
+		    right: 0;
+       	}
+
+       	@include media("<desktop"){
+       		margin-bottom:64px;
+       	}
+
+       	.container{
+       		@include media("<desktop"){
+       			width:100%;
+       		}
+       	}
+	}
+}

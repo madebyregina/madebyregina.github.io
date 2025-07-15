@@ -1,0 +1,46 @@
+
+
+.main-footer{
+  padding:10px 0;
+
+  @include media("<desktop"){
+    padding:16px;
+    text-align:center;
+  }
+  
+  .container{
+    display:flex;
+    align-items:center;
+
+    @include media("<desktop"){
+      flex-wrap:wrap;
+      gap:16px;
+      justify-content:center;
+    }
+  }
+
+
+  .copyright{
+    margin-left:85px;
+    font-family:$font-rubik;
+
+    @include media("<desktop"){
+      margin-left:0;
+      text-align:center;
+    }
+
+    &-text{
+      margin-left:85px;
+      font-family:$font-rubik;
+
+      @include media("<desktop"){
+        margin-left:0;
+        text-align:center;
+      }
+    }
+
+    &-year{
+      font-weight:$fw-bold;
+    }
+  }
+}

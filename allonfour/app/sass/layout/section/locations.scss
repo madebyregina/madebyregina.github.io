@@ -1,0 +1,59 @@
+
+
+.locations{
+	padding-top:64px;
+	padding-bottom:64px;
+
+	.locations-grid{
+		margin-bottom:64px;
+	}
+
+	.container{
+		max-width:1200px;
+	}
+}
+
+
+// Locations grid
+.locations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content:space-evenly;
+  width: 100%;
+}
+
+.location{
+	&-card{
+		display: flex;
+		min-height: 318px;
+		padding: 30px 16px;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	    flex: 1 0 auto;
+		border-radius: 20px;
+		box-sizing: border-box;
+		background-color: $color-white;
+	}
+
+	&-name{
+		font-size:24px;
+		line-height:1;
+		font-family:$font-poppins;
+		font-weight:$fw-medium;
+	}
+
+	&-icon {
+	  width: 52px;
+	  height: 52px;
+	  flex-shrink: 0;
+	  position: relative;
+	}
+
+	&-address{
+		color:$color-dove-gray;
+		font-style:normal;
+		text-align:center;
+	}
+}

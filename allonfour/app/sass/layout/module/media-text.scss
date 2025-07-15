@@ -1,0 +1,43 @@
+
+
+.media-text{
+	display:flex;
+	gap:60px;
+
+	@include media("<desktop"){
+		flex-wrap:wrap;
+		gap:40px;
+	}
+
+	&.reversed{
+		@include media(">=desktop"){
+			flex-flow:row-reverse;
+		}
+	}
+
+	&-content{
+		display:flex;
+		flex-flow:column;
+		gap:40px;
+	}
+
+	.content{
+	    display: flex;
+	    gap: 40px;
+	    flex-flow: column;
+	}
+
+	&-image{
+		img{
+			@include media("<desktop"){
+				width:100%;
+			}
+		}
+	}
+
+	.btn-wrap{
+		@include media("<desktop"){
+			text-align:center;
+		}
+	}
+}

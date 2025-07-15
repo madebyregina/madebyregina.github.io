@@ -1,0 +1,43 @@
+
+
+.book-appointment{
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.horizontal-cta{
+    display: flex;
+    align-items: center;
+    gap:40px;
+
+    @include media("<desktop"){
+    	flex-wrap:wrap;
+    }
+
+    .cta-title{
+    	font-size:40px;
+    	line-height:1;
+    	padding-bottom:0;
+    }
+
+    .cta-description{
+    	font-family:$font-rubik;
+    	font-weight:$fw-light;
+    	margin-top:20px;
+    }
+
+    .cta-buttons{
+    	.btn{
+    		width:100%;
+    	}
+
+    	@include media(">=desktop"){
+    		min-width:386px;
+    		max-width:386px;
+    	}
+
+    	> * {
+    		margin-bottom:16px;
+    	}
+    }
+}

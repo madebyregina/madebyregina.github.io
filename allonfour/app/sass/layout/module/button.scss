@@ -1,0 +1,50 @@
+
+
+button,
+.btn{
+  display: inline-block;
+  padding:9px 24px;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 1px solid $color-primary-blue;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  text-decoration: none;
+  font-size:20px;
+  font-family:$font-rubik;
+  background-color:$color-primary-blue;
+  color:$color-white;
+  width:auto;
+
+  @include media("<tablet"){
+  	font-size:16px;
+  }
+
+  &:hover {
+    background-color: $color-tory-blue;
+    border-color:$color-tory-blue;
+    color: $color-white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  &.secondary{
+  	background-color:transparent;
+  	border-color:$color-white;
+  	color:$color-white;
+
+  	&.light{
+  		border-color:$color-primary-blue;
+  		color:$color-primary-blue;
+  	}
+
+  	&:hover{
+  		background-color: $color-primary-blue;
+    	color: $color-white;
+    	border-color:$color-primary-blue;
+  	}
+  	
+  }
+}

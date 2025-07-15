@@ -1,0 +1,109 @@
+
+
+.surgeons{
+	.info-box{
+		margin-top:30px;
+	}
+	
+	.doctors-grid{
+		margin-top:70px;
+	}
+}
+
+// Info box
+.info-box{
+    border-radius: 10px;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: $color-dove-gray;
+    justify-content: center;
+    padding: 20px 30px;
+    font: $fw-light 20px/24px $font-rubik;
+}
+
+
+// Doctors grid
+.doctors-grid {
+	gap: 30px;
+    display: flex;
+    flex-wrap:wrap;
+
+    > * {
+    	flex:0 1 calc( 20% - 30px );
+
+    	@include media("<desktop"){
+    		flex:0 1 calc( 50% - 30px );
+    	}
+
+    	@include media("<tablet"){
+    		flex:0 1 100%;
+    	}
+    }
+}
+
+.doctor-profile-card{
+	display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: normal;
+    font-family: $font-rubik;
+    color: $color-dove-gray;
+    font-weight: $fw-medium;
+    line-height: 24px;
+
+    p{
+    	padding:0;
+    }
+
+    .doctor-image{
+    	width:100%;
+    }
+	
+	.doctor-specialty {
+	    color: $color-dove-gray;
+	    white-space: nowrap;
+	    font: $fw-light 20px/1.2 $font-rubik;
+	    align-self: center;
+	    margin: 24px 0 0 0;
+	}
+
+	.doctor-name {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    color: $color-primary-blue;
+	    text-align: center;
+	    justify-content: start;
+	    font: 24px $font-poppins;
+	    margin: 25px 0 0 0;
+	}
+
+	.doctor-degree {
+    	font-size: 20px;
+	    line-height: 1.2;
+	    align-self: center;
+	    margin: 24px 0 0 0;
+	}
+
+	.doctor-credentials {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    font-size: 18px;
+	    font-weight: $fw-regular;
+	    text-align: center;
+	    justify-content: start;
+	    padding: 0 14px;
+	    margin: 25px 0 0 0;
+
+	    .doctor-info-card & {
+	        line-height: 24px;
+	    }
+
+	    .doctor-profile-card & {
+	        line-height: 24px;
+	    }
+	}
+}

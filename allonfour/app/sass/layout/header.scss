@@ -1,0 +1,76 @@
+
+
+.site-header{
+	padding:16px 0;
+	position:fixed;
+	left:0;
+	right:0;
+	width:100%;
+	z-index:9999;
+	background:rgba( $color-white, 0.5 );
+
+	.container{
+		display:flex;
+		align-items:center;
+		gap:50px;
+
+		@include media("<desktop"){
+			gap: 16px;
+	        display: flex;
+	        width: 100%;
+	        padding: 0 20px;
+		}
+	}
+
+	.logo-container{
+		img{
+			@include media("<desktop"){
+				max-width:150px;
+			}
+		}
+	}
+
+	.btn{
+		@include media("<desktop"){
+			padding:9px 16px;
+			font-size:14px;
+		}
+	}
+
+	.location-badges{
+		display:flex;
+		align-items:center;
+		gap:16px;
+		flex-wrap:wrap;
+
+		@include media("<desktop"){
+			display:none;
+		}
+
+		.location-item{
+			a{
+				position:relative;
+				font-size:18px;
+				font-family: $font-dm-sans;
+				font-weight:$fw-bold;
+				color:$color-black;
+				padding-left:24px;
+
+				&:before{
+					content:"";
+					background-image:url(#{$images-path}/icon-location.svg);
+					width:18px;
+					height:18px;
+					background-size:18px;
+					background-repeat:no-repeat;
+				    display: block;
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    margin: auto;
+				    bottom: 0;
+				}
+			}
+		}
+	}
+}
