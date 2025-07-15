@@ -41,16 +41,6 @@ However, I’m happy to talk about what I’ve done — just send a message and 
 
 ---
 
-## 📬 Contact
-
-Interested in working together or just want to connect?
-
-- 🌐 Site: [rj.dev](https://madebyregina.github.io/made-by-regina)
-- 📧 Email: [Send a Digital Owl](mailto:53_rockery_wavelet@icloud.com) — I'll respond faster than an owl in a hurry! 🦉
-- 💬 GitHub: [github.com/yourusername](https://github.com/yourusername)
-
----
-
 ## 📅 Availability
 
 Currently available for freelance and project-based work. Let's make something awesome!
